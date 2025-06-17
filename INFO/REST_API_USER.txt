@@ -1,0 +1,56 @@
+(1) Створення даних
+
+POST
+http://localhost:8080/Your-Project-Name-1.0-SNAPSHOT/api/v1/customers
+
+Виконуємо окремі запити
+
+{
+    "fullName": "Vova Konan",
+    "address": "str. Lake"
+}
+
+{
+    "fullName": "Vika Fray",
+    "address": "str. Popova"
+}
+
+(2) Отримання всіх даних
+
+GET
+http://localhost:8080/Your-Project-Name-1.0-SNAPSHOT/api/v1/customerss
+
+(3) Отримання даних за id
+
+GET
+http://localhost:8080/Your-Project-Name-1.0-SNAPSHOT/api/v1/customers/2
+
+Також, за неіснуючим id
+
+GET
+http://localhost:8080/Your-Project-Name-1.0-SNAPSHOT/api/v1/customers/9
+
+(4) Оновлення даних за id
+
+PUT
+http://localhost:8080/Your-Project-Name-1.0-SNAPSHOT/api/v1/customers/2
+
+{
+    "fullName": "Vika Chika",
+    "address": "str. Popova"
+}
+
+Перевіремо через MySQL Workbench та REST-запит за відповідним id.
+
+Також, спробуємо оновити за неіснуючим id.
+
+(5) Видалення даних за id
+
+DELETE
+http://localhost:8080/Your-Project-Name-1.0-SNAPSHOT/api/v1/customers/4
+
+Перевіремо через MySQL Workbench, REST-запити отримання всіх даних
+та за відповідним id.
+
+Також, спробуємо повторно видалити за тим самим id, та за неіснуючим id.
+
