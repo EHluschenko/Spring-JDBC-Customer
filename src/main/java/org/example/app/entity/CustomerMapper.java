@@ -10,7 +10,7 @@ public class CustomerMapper implements RowMapper<Customer> {
     public Customer mapRow(ResultSet rs, int rowNum) throws SQLException {
         return new Customer(
                 rs.getLong("id"),
-                rs.getString("fullName"),
+                rs.getString("full_name"),
                 rs.getString("address")
         );
     }
